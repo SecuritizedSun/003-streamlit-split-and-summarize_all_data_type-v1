@@ -25,7 +25,7 @@ with col1:
     st.markdown("ChatGPT cannot summarize long texts. Now you can do it with this app.")
 
 with col2:
-    st.write("Contact with [AI Accelera](https://aiaccelera.com) to build your AI Projects")
+    st.write("Contact with [*William Sun*](omniai.labs4ever@gmail.com) to build your AI Projects")
 
 
 #Input OpenAI API Key
