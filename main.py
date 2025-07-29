@@ -41,7 +41,7 @@ openai_api_key = get_openai_api_key()
 # Input
 st.markdown("## Upload the text file you want to summarize")
 
-uploaded_file = st.file_uploader("Choose a file", type=["txt","pdf"], label_visibility="collapsed", help ="Please upload large document in txt" )
+uploaded_file = st.file_uploader("Choose a file", type=["txt","pdf"], label_visibility="collapsed", help ="*Please upload large document in txt*" )
 
        
 # Output
