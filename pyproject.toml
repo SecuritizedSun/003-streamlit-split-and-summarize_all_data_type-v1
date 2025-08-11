@@ -11,7 +11,21 @@ streamlit = "^1.37.0"
 langchain = "^0.2.11"
 langchain-openai = "^0.1.19"
 
+# Added dependencies for robust file handling + OCR
+pdfplumber = "^0.8.0"
+pdf2image = "^1.16.0"
+pytesseract = "^0.3.10"
+python-magic = "^0.4.27"
+# On Windows, python-magic might be problematic — include python-magic-bin as fallback
+python-magic-bin = {version = "^0.4.14", optional = true}
+chardet = "^5.2.0"
+python-docx = "^0.8.11"
+pillow = "^10.0.0"
+
+[tool.poetry.extras]
+windows_magic = ["python-magic-bin"]
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
