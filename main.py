@@ -32,7 +32,7 @@ from langchain.schema import Document
 # ---------- Helper: LLM loader ----------
 def load_LLM(openai_api_key: str):
     # deterministic output - set temperature to 0
-    llm = OpenAI(temperature=0, openai_api_key=openai_api_key, model="gpt-4o-mini")
+    llm = OpenAI(temperature=0, openai_api_key=openai_api_key, model="gpt-5-nano")
     return llm
 
 # ---------- Streamlit UI ----------
