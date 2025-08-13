@@ -21,6 +21,8 @@ import docx                   # python-docx
 import pdf2image              # convert PDF pages to images (for OCR)
 import pytesseract            # Tesseract OCR
 import streamlit as st
+import os
+os.environ["STREAMLIT_WATCHER_TYPE"] = "none"
 
 from langchain_openai import OpenAI
 from langchain.chains.summarize import load_summarize_chain
